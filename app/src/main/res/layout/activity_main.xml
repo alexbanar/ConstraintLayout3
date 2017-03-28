@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/guideline"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5843271" />
+        app:layout_constraintGuide_percent="0.5843271"
+        tools:layout_editor_absoluteY="361dp"
+        tools:layout_editor_absoluteX="0dp" />
 
 
     <Button
@@ -73,7 +75,6 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorControlHighlight"
         android:text="4"
-        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn5"
@@ -167,9 +168,7 @@
         app:layout_constraintVertical_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/btnUnderLine"
-        app:layout_constraintTop_toBottomOf="@+id/btnBackspace"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintLeft_toRightOf="@+id/btnUnderLine" />
 
     <Button
         android:id="@+id/btn7"
@@ -199,17 +198,19 @@
         android:background="?attr/colorControlHighlight"
         android:text="9"
         app:layout_constraintLeft_toRightOf="@+id/btn8"
-        app:layout_constraintRight_toLeftOf="@+id/btnBackspace"
+        app:layout_constraintRight_toLeftOf="@+id/imageView2"
         tools:layout_editor_absoluteY="522dp" />
 
-    <Button
-        android:id="@+id/btnBackspace"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_backspace_black_24dp"
-        tools:layout_editor_absoluteY="522dp"
+        android:layout_marginBottom="72dp"
+        android:background="?attr/colorControlHighlight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn9"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/btn9" />
+        app:srcCompat="@drawable/ic_backspace_black_24dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -226,10 +227,11 @@
         android:layout_height="45dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:backgroundTint="#9b3fb5"
         android:singleLine="true"
         android:textColor="#9b3fb5"
         tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="52dp" />
+        tools:layout_editor_absoluteY="55dp" />
 
     <TextView
         android:id="@+id/textView3"
